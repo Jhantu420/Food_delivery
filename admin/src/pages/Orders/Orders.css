@@ -1,0 +1,159 @@
+/* Orders Container */
+.order-container {
+    width: 100%;
+    max-width: 100vw;
+    padding: 30px;
+
+  }
+  
+  .order-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    justify-content: space-between;
+  }
+  
+  
+  .order-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .order-details {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .order-item-food {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .order-status {
+    font-size: 1.2rem;
+  }
+  
+  .status-text {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  /* Styled Select Dropdown */
+  .order-details select {
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #27ae60;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .order-details select:hover {
+    border-color: #218c54;
+  }
+  
+  .order-details select:focus {
+    border-color: #1c6b40;
+    box-shadow: 0 0 5px rgba(33, 140, 84, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .order-container {
+      padding: 20px;
+    }
+  
+    .order-title {
+      font-size: 2rem;
+    }
+  
+    .order-item {
+      padding: 20px;
+    }
+  
+    .order-icon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .order-item-food {
+      font-size: 1.3rem;
+    }
+  
+    .order-details select {
+      width: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .order-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .order-icon {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .order-item-food {
+      font-size: 1.2rem;
+    }
+  
+    .order-details select {
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .order-container {
+      padding: 10px;
+    }
+  
+    .order-title {
+      font-size: 1.8rem;
+    }
+  
+    .order-item {
+      padding: 10px;
+    }
+  
+    .order-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .order-item-food {
+      font-size: 1rem;
+    }
+  
+    .order-details select {
+      width: 150px;
+    }
+  }
+  
