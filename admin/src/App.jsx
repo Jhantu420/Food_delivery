@@ -7,7 +7,7 @@ import Orders from "./pages/Orders/Orders";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-backend-gy6h.onrender.com";
   return (
     <div>
       <Navbar />
